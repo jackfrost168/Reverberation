@@ -107,7 +107,7 @@ lowpass8=filter([1,den8(2)],den8,x/n);
 
 low2=lowpass5+lowpass6+lowpass7+lowpass8;
 low=low1+low2;
-%%%%  the first allpass filter
+%  the first allpass filter
 n1=225+1;  %0.0051
 g1=0.5;
 numallpass1=zeros(n1,1);
@@ -118,7 +118,7 @@ denallpass1=zeros(n1,1);
 denallpass1(1)=1;
 denallpass1(n1)=-g1;
 allpass1=filter(numallpass1,denallpass1,low);
-%%%%  the second allpass filter
+%  the second allpass filter
 n2=556+1;   %0.0126
 g2=0.5;
 numallpass2=zeros(n2,1);
