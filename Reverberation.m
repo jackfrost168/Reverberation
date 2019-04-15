@@ -1,6 +1,6 @@
 %%%  Schroeder混响模型由8个并联的低通梳状滤波器，2个串联的全通滤波器组成(具体模型结构和filter函数参数请见pdf文档)
 clc;close;clear;
-%%%测试音频
+%%%测试音频  
 %filename = 'G:\Workfiles\Reverberation\experiment\Algorithm Reverberation\拍手声\clap.wav'
 %filename = 'F:\改进Schroeder Reverberation（效果较好）\测试数据\clap.wav';
 filename = 'F:\改进Schroeder Reverberation（效果较好）\测试数据\music\See You Again.mp3';
@@ -13,7 +13,7 @@ f=0.84*0.8;     %（0.84为控制混响空间大小参数，范围在0-1之间�
 
 x=X([1:length(X)],1);
 %x=X([7500+128:7700],1);
-%%%%  第一个声道
+%%%%  第一个声道 
 %%%%  8th lowpass filter
 m1=1557+1;    %回音间隔0.0353
 num1 = zeros(m1,1);
