@@ -7,7 +7,7 @@ filename = 'F:\改进Schroeder Reverberation（效果较好）\测试数据\musi
 [X,FS]=audioread(filename); % 将 WAV 文件转换成变量
 n=8;
 %roomsize=input('please input a number between 0 and 1:');
-f=0.84*0.8;     %（0.84为控制混响空间大小参数，范围在0-1之间，可调节）
+f=0.84*0.8;     %（0.84为控制混响空间大小参数，范围在0-1之间，可调节，越大混响空间越大）
 %sound(x,FS);
 %signal_out = filter(num,den,signal_in);
 
