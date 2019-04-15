@@ -140,8 +140,8 @@ i=23;
 
 y=X([1:length(X)],2);
 %y=X([7500+128:7700],2);
-%%%%  第二个声道
-%%%%  8th lowpass filter
+%  第二个声道
+%  8th lowpass filter
 m12=1557+1+i;    %回音间隔0.0353
 num12 = zeros(m12,1);
 num12(m12-1)=1;
@@ -234,7 +234,7 @@ lowpass82=filter([1,den82(2)],den82,y/n);
 
 low22=lowpass52+lowpass62+lowpass72+lowpass82;
 lowpass=low12+low22;
-%%%%  the first allpass filter
+%  the first allpass filter
 n12=225+1+i;  %0.0051
 g12=0.5;
 numallpass12=zeros(n12,1);
@@ -245,7 +245,7 @@ denallpass12=zeros(n12,1);
 denallpass12(1)=1;
 denallpass12(n12)=-g12;
 allpass12=filter(numallpass12,denallpass12,lowpass);
-%%%%  the second allpass filter
+%  the second allpass filter
 n22=556+1+i;   %0.0126
 g22=0.5;
 numallpass22=zeros(n22,1);
