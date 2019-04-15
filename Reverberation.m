@@ -1,6 +1,6 @@
-%%%  Schroeder混响模型由8个并联的低通梳状滤波器，2个串联的全通滤波器组成(具体模型结构和filter函数参数请见pdf文档)
+%%%  Schroeder混响模型由8个并联的低通梳状滤波器，2个串联的全通滤波器组成(具体模型结构和filter函数参数请见pdf文档)                       
 clc;close;clear;
-%%%测试音频  
+%测试音频
 %filename = 'G:\Workfiles\Reverberation\experiment\Algorithm Reverberation\拍手声\clap.wav'
 %filename = 'F:\改进Schroeder Reverberation（效果较好）\测试数据\clap.wav';
 filename = 'F:\改进Schroeder Reverberation（效果较好）\测试数据\music\See You Again.mp3';
