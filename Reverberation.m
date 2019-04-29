@@ -128,11 +128,8 @@ denallpass2(1)=1;
 denallpass2(n2)=-g2;
 allpass2=filter(numallpass2,denallpass2,allpass1);
 
-%allpass=allpass4;
 %sound(allpass2,FS);
-%audiowrite( 'G:\Workfiles\Reverberation\experiment\Algorithm Reverberation\Schroeder Reverberation\yuyin\yuyin_reverb_test.wav',allpass2,FS);
-%audiowrite( 'G:\Workfiles\Reverberation\experiment\myreverb\guitar_sound\guitar_reverb_test.wav',allpass,FS);
-%audiowrite( 'G:\Workfiles\Reverberation\experiment\Algorithm Reverberation\拍手声\clap_reverb_Schroeder_test.wav',allpass2,FS);
+%audiowrite( 'clap_reverb_Schroeder_test.wav',allpass2,FS);
 
 i=23;
 
